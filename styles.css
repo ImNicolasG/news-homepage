@@ -1,0 +1,102 @@
+body {
+    margin: 75px 250px;
+    background-color: hsl(36, 100%, 99%);
+    font-family: 'Inter', sans-serif;
+    
+    
+}
+
+p {
+  
+    color: hsl(236, 13%, 42%);  
+}
+
+/* Navbar */
+header {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px;    
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: hsl(236, 13%, 42%);
+    font-size: 18px;
+
+}
+/* //////////////////// */
+
+/* Main Page Styling */
+
+#priority {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#featured {
+    width: 60%;
+
+}
+
+#featured img {
+    width: 100%;
+}
+
+#featured h1 {
+    font-size: 48px;
+    float: left;
+    width: 50%;
+}
+
+#featured button {
+    background-color: hsl(5, 85%, 63%);
+    border: none;
+    color: white;
+    width: 25%;
+    height: 45px;
+}
+
+
+
+#new {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:hsl(240, 100%, 5%);
+    width: 25%;
+    padding: 20px;
+}
+
+#new h2 {
+    color: orange;
+    font-size: 32px;
+    margin: 0;
+}
+
+#new h3 {
+    color: white;
+}
+
+hr {
+    height: 2px;
+    color: hsl(236, 13%, 42%);
+    background-color: hsl(236, 13%, 42%);
+    border: none;
+    width: 100%;
+}
+
+/* //////////////////// */
