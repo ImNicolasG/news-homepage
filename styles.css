@@ -17,7 +17,7 @@ header {
     list-style: none;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 50px;    
+    padding-bottom: 25px;    
 }
 
 #navbar {
@@ -44,6 +44,7 @@ header {
 #priority {
     display: flex;
     justify-content: space-between;
+    padding: 25px 0;
     
 }
 
@@ -57,9 +58,15 @@ header {
 }
 
 #featured h1 {
-    font-size: 48px;
+    font-size: 60px;
     float: left;
-    width: 50%;
+    width: 40%;
+    margin: 0;
+}
+
+#featured p {
+    font-size: 24px;
+    line-height: 30px;
 }
 
 #featured button {
@@ -89,6 +96,7 @@ header {
 
 #new h3 {
     color: white;
+    margin: 0;
 }
 
 hr {
