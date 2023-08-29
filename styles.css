@@ -1,8 +1,7 @@
 body {
-    margin: 75px 250px;
+    margin: 0;
     background-color: hsl(36, 100%, 99%);
     font-family: 'Inter', sans-serif;
-    
     
 }
 
@@ -29,17 +28,25 @@ header {
 #navbar li {
     list-style: none;
     padding: 0 20px;
+    
 }
 
 #navbar li a {
     text-decoration: none;
     color: hsl(236, 13%, 42%);
     font-size: 18px;
+    transition: 200ms ease-in-out;
 
 }
+
+
+#navbar li a:hover {
+    color: hsl(35, 77%, 62%);
+}
+
 /* //////////////////// */
 
-/* Main Page Styling */
+/* Front Page Styling */
 
 #priority {
     display: flex;
@@ -49,7 +56,8 @@ header {
 }
 
 #featured {
-    width: 60%;
+    width: 70%;
+    position: relative;
 
 }
 
@@ -59,43 +67,67 @@ header {
 
 #featured h1 {
     font-size: 60px;
+    font-weight: 800;
     float: left;
     width: 40%;
-    margin: 0;
+    margin: 30px 0 0 0;
 }
 
 #featured p {
     font-size: 24px;
-    line-height: 30px;
+    line-height: 35px;
+    margin: 30px 0 0 0;
 }
 
 #featured button {
+    position: absolute;
     background-color: hsl(5, 85%, 63%);
     border: none;
     color: white;
+    font-size: 16px;
+    letter-spacing: 7px;
+    font-weight: 700;
     width: 25%;
     height: 45px;
+    bottom: 0;
+    cursor:pointer;
+    transition: 300ms ease-in-out;
 }
 
+#featured button:hover {
+    background-color: hsl(240, 100%, 5%);
+}
 
 
 #new {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     background-color:hsl(240, 100%, 5%);
     width: 25%;
-    padding: 20px;
+    padding: 30px 20px 20px 20px;
 }
 
 #new h2 {
-    color: orange;
-    font-size: 32px;
-    margin: 0;
+    color: hsl(35, 77%, 62%);
+    font-size: 46px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
 }
 
 #new h3 {
     color: white;
+    margin: 0 0 20px 0;
+    transition: 300ms ease-in-out;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+#new h3:hover {
+    color: hsl(35, 77%, 62%);
+}
+
+#new p {
+    font-size: 18px;
     margin: 0;
 }
 
@@ -105,6 +137,63 @@ hr {
     background-color: hsl(236, 13%, 42%);
     border: none;
     width: 100%;
+    margin: 50px 0;
 }
+
+/* //////////////////// */
+
+
+
+/* GRID OF ARTICLES */
+
+#old {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 35% 35% 35%;
+}
+
+
+.small-article {
+    display: flex;
+    height: 150px;
+}
+
+.small-article div {
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.small-article img {
+    float: left;
+}
+
+.small-article h2 {
+    color: hsl(233, 8%, 79%);
+    font-size: 30px;
+    margin: 0;
+}
+
+.small-article h4 {
+    font-size: 20px;
+    margin: 0;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+
+.small-article h4:hover {
+    color:hsl(35, 77%, 62%);
+}
+
+.small-article p {
+    color: hsl(236, 13%, 42%);
+    line-height: 25px;
+    margin: 0;
+}
+
+
+
+
 
 /* //////////////////// */
