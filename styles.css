@@ -19,6 +19,12 @@ header {
     padding-bottom: 25px;
 }
 
+#container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
 #navbar {
     display: flex;
     justify-content: center;
@@ -29,6 +35,10 @@ header {
     list-style: none;
     padding: 0 20px;
     
+}
+
+#navbar li:nth-last-child(1) {
+    padding-right: 0;
 }
 
 #navbar li a {
@@ -43,6 +53,37 @@ header {
 #navbar li a:hover {
     color: hsl(35, 77%, 62%);
 }
+
+
+/* responsive navbar button */
+
+#collapse-button {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.button-line {
+    background-color: black;
+    width: 40px;
+    height: 4px;
+}
+
+@media screen and (max-width: 800px) {
+
+    #collapse-button {
+        visibility: visible;
+        position: absolute;
+        right: 0;
+    }
+
+    #navbar {
+        visibility: hidden;
+    }
+
+}
+
 
 /* //////////////////// */
 
@@ -204,3 +245,54 @@ hr {
 /* Navbar needs to collapse when size hits a certain point */
 /* when selected, navbar pops in from right */
 /* small border on edges and everything aligns in a column */
+
+/* TODO: When resized to smaller viewports, size of elements caps @ 350ish px */
+/* gotta find a fix for that... Fkin annoying */
+/* assumption is a parent element somewhere is being restricted so -> */
+/* width 100% doesnt work. May need to change width to 100vw but we will see. */
+
+
+@media screen and (max-width: 800px) {
+
+    #priority {
+        display: unset;
+    }
+
+    #featured {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #featured h1 {
+        float: unset;
+        width: unset;
+    }
+
+    #featured p {
+        float: unset;
+        width: unset;
+    }
+
+    #featured button {
+        position: unset;
+        left: unset;
+        width: 50%;
+        margin-top: 30px;
+    }
+
+    #new {
+        width: 100%;
+        padding: 0;
+    }
+
+    #new h2, #new h3, #new p {
+        padding-left: 35px;
+    }
+
+    #new hr {
+        width: unset;
+        margin: 50px 35px;
+    }
+
+}
