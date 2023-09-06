@@ -80,23 +80,12 @@ header {
 
     #collapse-button {
         visibility: visible;
-        position: absolute;
-        float: right;
     }
 
     #navbar {
-        visibility: hidden;
-        width: 0;
+        display: none;
     }
 
-    #navbar li {
-        width: 0;
-        padding: 0;
-    }
-
-    #navbar li a {
-        font-size: 0px;
-    }
 
 }
 
