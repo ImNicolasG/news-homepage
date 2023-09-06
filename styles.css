@@ -75,11 +75,21 @@ header {
     #collapse-button {
         visibility: visible;
         position: absolute;
-        right: 0;
+        float: right;
     }
 
     #navbar {
         visibility: hidden;
+        width: 0;
+    }
+
+    #navbar li {
+        width: 0;
+        padding: 0;
+    }
+
+    #navbar li a {
+        font-size: 0px;
     }
 
 }
@@ -241,8 +251,20 @@ hr {
 /* //////////////////// */
 
 
+/* Footer */
+
+#footer {
+    padding: 50px 0;
+}
+
+
+
+
+/* //////////////////// */
+
+
 /* TODO: Media queries */
-/* Navbar needs to collapse when size hits a certain point */
+/* DONE: Navbar needs to collapse when size hits a certain point */
 /* when selected, navbar pops in from right */
 /* small border on edges and everything aligns in a column */
 
@@ -267,11 +289,13 @@ hr {
     #featured h1 {
         float: unset;
         width: unset;
+        font-size: 3em;
     }
 
     #featured p {
         float: unset;
         width: unset;
+        font-size: 1.25em;
     }
 
     #featured button {
@@ -283,11 +307,12 @@ hr {
 
     #new {
         width: 100%;
-        padding: 0;
+        padding: 40px 0;
+        margin: 100px 0;
     }
 
     #new h2, #new h3, #new p {
-        padding-left: 35px;
+        padding: 0 35px;
     }
 
     #new hr {
@@ -295,4 +320,34 @@ hr {
         margin: 50px 35px;
     }
 
+
+    #old {
+        display: flex;
+        flex-direction: column;
+        gap: 6rem;
+    }
+
+    .small-article {
+        max-height: 300px;
+    }
+
+    .small-article div {
+        padding: 10px 10px;
+    }
+
+    .small-article img {
+        width: 30%;
+    }
+
+    .small-article h2 {
+        font-size: 6vw;
+    }
+
+    .small-article h4 {
+        font-size: 5vw;
+    }
+    
+    .small-article p {
+        font-size: 4vw;
+    }
 }
